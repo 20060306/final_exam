@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react'
 import Slider from "react-slick";
-import './shoes.scss'
 import {Link} from 'react-router-dom'
 
 
@@ -18,14 +17,14 @@ function shoes() {
       };
 
       useEffect(()=>{
-        fetch('https://api.escuelajs.co/api/v1/products/?categoryId=4').then((data)=>data.json()).then((res)=>setShoes(res))
+        fetch('https://api.escuelajs.co/api/v1/products/?categoryId=3').then((data)=>data.json()).then((res)=>setShoes(res))
       },[])
 
   return (
     <>
-         <div className="container shoes__cont">
+         <div className="container shoes__cont sofa">
           <div className="shoes_top">
-            <h3 className='shoes_top'>Score these trending kicks</h3>
+            <h3 className='shoes_top'>Extra 20% off for Presidents' Day</h3>
               <Link className='shoes_btn'>See all <i className="fa-solid fa-arrow-right"></i></Link>
           </div>
          <Slider {...settings}>

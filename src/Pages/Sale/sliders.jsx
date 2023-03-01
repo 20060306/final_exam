@@ -15,7 +15,7 @@ function Sliders() {
       <Slider {...settings}>
       {
         state.map((e)=>{
-            console.log(e)
+            
             return(
                 <div key={e.id} className="sliders">
                     <img className='sliders-img' src={e.images} alt="" />

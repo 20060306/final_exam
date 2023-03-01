@@ -1,12 +1,8 @@
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-between;
-    height: 31px;
+&-header{
+    display: flex;
+    gap: 20px;
 }
-
-.navbar-header {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    gap: 20px;;
 }

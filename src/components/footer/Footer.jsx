@@ -2,9 +2,9 @@ import React from 'react';
 import img from '../assets/img.svg';
 import './Footer.scss';
 
-export const Footer = () => {
+ const Footer = () => {
   return (
-    <div>
+    <div className='footer'>
         <ul className='footer-first-list'>
             <li>About eBay</li>
             <li>Announcements</li>
@@ -31,3 +31,4 @@ export const Footer = () => {
     </div>
   )
 }
+export default Footer

@@ -2,7 +2,7 @@ import React from 'react';
 import call from "../assets/Vector.svg";
 import basket from "../assets/basket.svg";
 import './NavbarHeader.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 
@@ -12,7 +12,7 @@ function NavbarHeader() {
      <div className='container'>
             <div className='navbar'>
                 <ul className='navbar-header'>
-                    <li>Hi!<NavLink to='Sign in'>Sign in</NavLink>  or <NavLink to='register'> register</NavLink></li>
+                    <li>Hi!<NavLink to='login'>Sign in</NavLink>  or <NavLink to='register'> register</NavLink></li>
                     <li>Daily Deals</li>
                     <li>Brand Outlet</li>
                     <li>Help & Contact</li>
@@ -27,8 +27,8 @@ function NavbarHeader() {
                     <li><select>
                         <option value="my ebay">My Ebay</option>
                         </select></li>
-                    <li><img src={call} alt={call} /></li>
-                    <li><img src={basket} alt={basket} /></li>
+                    <Link to='/news'><i className="fa-regular fa-bell"></i></Link>
+                    <Link to='/shop'><i className="fa-solid fa-cart-shopping"></i></Link>
                 </ul>
 
             </div>
